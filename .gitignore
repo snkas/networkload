@@ -1,0 +1,11 @@
+*.iml
+.idea/
+dist/
+*.egg-info
+*.pyc
+temp/
+.coverage
+htmlcov/
+schedule.csv
+topology.properties
+.pytest_cache

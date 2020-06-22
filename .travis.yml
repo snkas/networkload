@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+
+# Command to install dependencies
+install:
+  - pip install numpy
+  - pip install coverage
+  - bash install_local.sh
+
+# Command to run tests
+script:
+  - python -m pytest
+  - pytest
+  - coverage run --omit="tests/*" -m unittest discover -v -s tests
+  - python example/example.py
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
