@@ -26,7 +26,7 @@ from distutils.core import setup
 
 setup(
     name='networkload',
-    version='1.1',
+    version='1.2',
     description="Some utilities to generate network topologies and load",
     license="MIT",
     python_requires='>=3.6',

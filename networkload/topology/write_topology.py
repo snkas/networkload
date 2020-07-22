@@ -25,9 +25,9 @@ def write_topology(filename, topology):
     with open(filename, "w+") as f_out:
         f_out.write("num_nodes=" + str(topology.n) + "\n")
         f_out.write("num_undirected_edges=" + str(len(topology.undirected_edges_list)) + "\n")
-        f_out.write("switches=set(" + ','.join(str(x) for x in topology.switches) + ")\n")
-        f_out.write("switches_which_are_tors=set(" + ','.join(str(x) for x in topology.switches_which_are_tors) + ")\n")
-        f_out.write("servers=set(" + ','.join(str(x) for x in topology.servers) + ")\n")
+        f_out.write("switches=set(" + ','.join(str(x) for x in sorted(list(topology.switches))) + ")\n")
+        f_out.write("switches_which_are_tors=set(" + ','.join(str(x) for x in sorted(list(topology.switches_which_are_tors))) + ")\n")
+        f_out.write("servers=set(" + ','.join(str(x) for x in sorted(list(topology.servers))) + ")\n")
         f_out.write("undirected_edges=set("
                     + ','.join(str(x[0]) + "-" + str(x[1]) for x in topology.undirected_edges_list)
                     + ")\n")
