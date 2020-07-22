@@ -54,3 +54,26 @@ class TestBaseTopology(unittest.TestCase):
             self.assertEqual(lines[4].strip(), "servers=set(3,4)")
             self.assertEqual(lines[5].strip(), "undirected_edges=set(0-1,0-4,1-2,1-5,2-3)")
             self.assertEqual(len(lines), 6)
+
+    def test_topology_writer_valid_reordered(self):
+        write_topology(
+            "temp_topology.properties",
+            Topology(
+                6,
+                [(1, 2), (0, 1), (0, 4), (2, 3), (5, 1)],
+                [0, 2, 1, 5],
+                [2, 0],
+                [4, 3]
+            )
+        )
+        with open("temp_topology.properties", "r") as f_in:
+            lines = []
+            for line in f_in:
+                lines.append(line)
+            self.assertEqual(lines[0].strip(), "num_nodes=6")
+            self.assertEqual(lines[1].strip(), "num_undirected_edges=5")
+            self.assertEqual(lines[2].strip(), "switches=set(0,1,2,5)")
+            self.assertEqual(lines[3].strip(), "switches_which_are_tors=set(0,2)")
+            self.assertEqual(lines[4].strip(), "servers=set(3,4)")
+            self.assertEqual(lines[5].strip(), "undirected_edges=set(0-1,0-4,1-2,1-5,2-3)")
+            self.assertEqual(len(lines), 6)
