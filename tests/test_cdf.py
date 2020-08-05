@@ -32,7 +32,7 @@ class TestCdf(unittest.TestCase):
     def test_draw_from_cdf_linear(self):
         random.seed(9892848)
         cdf = [
-            (0, 0),
+            (0, 0.0),
             (100, 0.5),
             (1000, 0.9),
             (10000, 1.0)
@@ -48,7 +48,7 @@ class TestCdf(unittest.TestCase):
     def test_draw_from_cdf_non_linear(self):
         random.seed(859338)
         cdf = [
-            (0, 0),
+            (0, 0.0),
             (100, 0.5),
             (1000, 0.9),
             (10000, 1.0)

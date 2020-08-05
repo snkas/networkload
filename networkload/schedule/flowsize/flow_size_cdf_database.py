@@ -40,7 +40,7 @@
 # as such that entry is edited to (4000, 0) instead of (0, 0).
 
 CDF_PFABRIC_WEB_SEARCH_BYTE = [
-    (4000, 0),
+    (4000, 0.0),
     (10000, 0.15),
     (20000, 0.2),
     (30000, 0.3),
@@ -51,7 +51,7 @@ CDF_PFABRIC_WEB_SEARCH_BYTE = [
     (int(2e+06), 0.8),
     (int(5e+06), 0.9),
     (int(1e+07), 0.97),
-    (int(3e+07), 1),
+    (int(3e+07), 1.0),
 ]
 
 # Filename: VL2_CDF
@@ -75,7 +75,7 @@ CDF_PFABRIC_WEB_SEARCH_BYTE = [
 # as such that entry is edited to (100, 0) instead of (0, 0).
 
 CDF_PFABRIC_DATA_MINING_BYTE = [
-    (100, 0),
+    (100, 0.0),
     (180, 0.1),
     (216, 0.2),
     (560, 0.3),
@@ -87,5 +87,5 @@ CDF_PFABRIC_DATA_MINING_BYTE = [
     (400000, 0.9),
     (int(3.16e+06), 0.95),
     (int(1e+08), 0.98),
-    (int(1e+09), 1)
+    (int(1e+09), 1.0)
 ]
