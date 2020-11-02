@@ -1,6 +1,6 @@
 # Networkload
 
-[![Build Status](https://travis-ci.org/snkas/networkload.svg?branch=master)](https://travis-ci.org/snkas/networkload) [![codecov](https://codecov.io/gh/snkas/networkload/branch/master/graph/badge.svg)](https://codecov.io/gh/snkas/networkload)
+[![Build Status](https://travis-ci.com/snkas/networkload.svg?branch=master)](https://travis-ci.com/snkas/networkload) [![codecov](https://codecov.io/gh/snkas/networkload/branch/master/graph/badge.svg)](https://codecov.io/gh/snkas/networkload)
 
 This Python module encompasses functions used to generate workloads for networks. There is a distinction between topology and schedule generation.
 
