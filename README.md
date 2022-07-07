@@ -6,6 +6,7 @@ This Python module encompasses functions used to generate workloads for networks
 
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. (see also the MIT License in ./LICENSE).**
 
+**Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. (see also the Apache License v2.0 in ./LICENSE).**
 
 ## Installation
 
@@ -52,7 +53,9 @@ You can now include it using: `import networkload`
 * Poisson arrival
 * Constant arrival
 * Constant flow size
-* Flow size from CDF (CDF database includes an interpretation of pFabric web search and pFabric data mining)
+* Flow size from CDF. The CDF database includes an interpretation of pFabric web search and pFabric data mining CDFs. These CDFs are licensed under Apache License v2.0 by pFabric/DCTCP/VL2's authors, see also:
+  - https://github.com/datacenter/empirical-traffic-gen
+  - https://github.com/snkas/networkload/blob/master/networkload/schedule/flowsize/flow_size_cdf_database.py
 
 
 ## Formats
