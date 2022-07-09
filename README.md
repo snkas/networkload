@@ -53,8 +53,10 @@ You can now include it using: `import networkload`
 * Poisson arrival
 * Constant arrival
 * Constant flow size
-* Flow size from CDF. The CDF database includes an interpretation of pFabric web search and pFabric data mining CDFs. These CDFs are licensed under Apache License v2.0 by pFabric/DCTCP/VL2's authors, see also:
+* Flow size from CDF. The CDF database includes an interpretation of pFabric web search and pFabric data mining CDFs.
+  These CDFs and the corresponding generator are licensed under Apache License v2.0 by pFabric/DCTCP/VL2's authors, see also:
   - https://github.com/datacenter/empirical-traffic-gen
+  - https://github.com/snkas/networkload/blob/master/networkload/schedule/draw_from_cdf.py
   - https://github.com/snkas/networkload/blob/master/networkload/schedule/flowsize/flow_size_cdf_database.py
 
 

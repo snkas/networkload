@@ -22,8 +22,10 @@ SOFTWARE.
 
 ===
 
-File schedule/flowsize/flow_size_cdf_database.py is licensed under Apache License v2.0.
-See the file for more information.
+Files:
+- schedule/draw_from_cdf.py
+- schedule/flowsize/flow_size_cdf_database.py
+are licensed under Apache License v2.0. See the files for more information.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
